@@ -31,7 +31,7 @@ print 'Num of kernel type:', kernel_type_num
 print 'Kernel size and Stride of each kernel type:', kernel_size_each_type, stride_each_type
 print 'Feature map size of each kernel type:', feature_map_size_each_type
 
-feature_map_num = 400
+feature_map_num = 448
 kernel_num_each_type = [4, 2, 1]
 kernel_num = np.sum(kernel_num_each_type)
 print 'Feature map num of each module:', feature_map_num
@@ -199,13 +199,13 @@ single_example_time =   0.35 * b.second
 resting_time = 0.15 * b.second
 
 #the the interval of process data and show information
-progress_interval = 100
-validate_interval = 5000
+progress_interval = 10
+validate_interval = 5000   #no less than 2000
 save_interval = 500
 
 #number of samples for training
 n_train = 60000
-train_begin = 0
+train_begin = 0    #specify which iteration you want the training to begin from 
 
 #load trained weight to continue
 if train_begin:

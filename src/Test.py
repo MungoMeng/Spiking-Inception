@@ -30,7 +30,7 @@ print 'Num of kernel type:', kernel_type_num
 print 'Kernel size and Stride of each kernel type:', kernel_size_each_type, stride_each_type
 print 'Feature map size of each kernel type:', feature_map_size_each_type
 
-feature_map_num = 400
+feature_map_num = 448
 kernel_num_each_type = [4, 2, 1]
 kernel_num = np.sum(kernel_num_each_type)
 print 'Feature map num of each module:', feature_map_num
@@ -197,7 +197,7 @@ print 'time needed to load testing set:', end - start
 #specify the location
 load_path = './weights/'
 save_path = './activity/'
-load_ending = '40000'
+load_ending = ''       #specify which weight file you want to load from load_path (only ending number needed)
 save_ending = load_ending
 
 #load trained weight and theta
@@ -209,7 +209,7 @@ single_example_time =   0.35 * b.second
 resting_time = 0.15 * b.second
 
 #the the interval of showing information
-progress_interval = 1000
+progress_interval = 10
 
 #number of samples for testing and assignment
 n_test = 10000

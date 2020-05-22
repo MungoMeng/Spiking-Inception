@@ -2,10 +2,10 @@ import numpy as np
 from Functions import *
 
 path_root = './activity/'
-trained_sample = '50000'
+trained_sample = ''   #specify which activiy file you want to load from path_root
 testing_num = 10000
 assignment_num = 10000
-power = 0.1
+power = 0.1    #VFA parameter
 
 #------------------------------------------------------------------------------ 
 # Load neurons activity
@@ -17,15 +17,14 @@ assignment_input_numbers = np.load(path_root + 'Labels_assignment' + str(assignm
     
 #------------------------------------------------------------------------------ 
 # Assignments
-print 'get assignments(1 class) for A1'
+print 'get assignments(VFO) for A1'
 assignments = get_new_assignments(assignment_result_monitor, assignment_input_numbers)
-print 'get assignments(10 class) for A1'
+print 'get assignments(VFA) for A1'
 assignments_for_10 = get_new_assignments_for_10(assignment_result_monitor, assignment_input_numbers, power)
 
 #------------------------------------------------------------------------------ 
 # Accuracy
 
-print '\ncalculate accuracy for A1'
 results_proportion = np.zeros((10, assignment_num))
 test_results = np.zeros((10, assignment_num))
 for j in range(assignment_num):
@@ -35,7 +34,7 @@ difference = test_results[0,:] - assignment_input_numbers[:]
 correct = len(np.where(difference == 0)[0])
 incorrect = len(np.where(difference != 0)[0])
 sum_accurracy = correct/float(assignment_num) * 100
-print 'Assignment for 1 class Accuracy(validating): ', sum_accurracy, ' num incorrect: ', incorrect
+print 'VFO Accuracy(validating): ', sum_accurracy, ' num incorrect: ', incorrect
     
 results_proportion = np.zeros((10, testing_num))
 test_results = np.zeros((10, testing_num))
@@ -46,7 +45,7 @@ difference = test_results[0,:] - testing_input_numbers[:]
 correct = len(np.where(difference == 0)[0])
 incorrect = len(np.where(difference != 0)[0])
 sum_accurracy = correct/float(testing_num) * 100
-print 'Assignment for 1 class Accuracy(testing): ', sum_accurracy, ' num incorrect: ', incorrect
+print 'VFO Accuracy(testing): ', sum_accurracy, ' num incorrect: ', incorrect
     
 results_proportion = np.zeros((10, assignment_num))
 test_results = np.zeros((10, assignment_num))
@@ -57,7 +56,7 @@ difference = test_results[0,:] - assignment_input_numbers[:]
 correct = len(np.where(difference == 0)[0])
 incorrect = len(np.where(difference != 0)[0])
 sum_accurracy = correct/float(assignment_num) * 100
-print 'Assignment for 10 classes(power:', power, ') Accuracy(validating): ', sum_accurracy, ' num incorrect: ', incorrect
+print 'VFA (power:', power, ') Accuracy(validating): ', sum_accurracy, ' num incorrect: ', incorrect
     
 results_proportion = np.zeros((10, testing_num))
 test_results = np.zeros((10, testing_num))
@@ -68,4 +67,4 @@ difference = test_results[0,:] - testing_input_numbers[:]
 correct = len(np.where(difference == 0)[0])
 incorrect = len(np.where(difference != 0)[0])
 sum_accurracy = correct/float(testing_num) * 100
-print 'Assignment for 10 classes(power:', power, ') Accuracy(testing): ', sum_accurracy, ' num incorrect: ', incorrect
+print 'VFA (power:', power, ') Accuracy(testing): ', sum_accurracy, ' num incorrect: ', incorrect

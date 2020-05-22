@@ -8,7 +8,7 @@ from struct import unpack
 from brian2 import *
 from brian2tools import *
 
-MNIST_data_path = '/home/public/data/MNIST/'
+MNIST_data_path = ''     #specify where your data is
 
 #------------------------------------------------------------------------------ 
 # functions
