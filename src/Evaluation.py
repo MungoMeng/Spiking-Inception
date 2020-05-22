@@ -2,7 +2,7 @@ import numpy as np
 from Functions import *
 
 path_root = './activity/'
-trained_sample = ''   #specify which activiy file you want to load from path_root
+trained_sample = ''   #specify which activity file you want to load from path_root
 testing_num = 10000
 assignment_num = 10000
 power = 0.1    #VFA parameter
