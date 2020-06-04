@@ -33,7 +33,7 @@ print 'Feature map size of each kernel type:', feature_map_size_each_type
 feature_map_num = 448
 kernel_num_each_type = [4, 2, 1]
 kernel_num = np.sum(kernel_num_each_type)
-print 'Feature map num of each module:', feature_map_num
+print 'Feature map num:', feature_map_num
 print 'Kernel num of each kernel type:', kernel_num_each_type
 print 'Num of kernel:', kernel_num
 
