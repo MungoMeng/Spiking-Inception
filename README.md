@@ -5,7 +5,7 @@ But the previous SNNs trained through this approach are limited by slow learning
 To ease these limitations. We proposed a Spiking Inception architecture for unsupervised SNN. 
 Compared with widely used Fully-Connected (FC) and Locally-Connected (LC) architecture, the STDP-based unsupervised SNN with our architecture
 has much improved learning capability, learning efficiency, and robustness.  
-**For more details, please refer to our [paper](https://arxiv.org/abs/2001.01680).**
+**For more details, please refer to our paper. [[IEEE](https://ieeexplore.ieee.org/document/9207161)] [[arXiv](https://arxiv.org/abs/2001.01680)].**
 
 ## Architecture
 ![architecture](https://github.com/MungoMeng/Spiking-Inception/blob/master/Figure/architecture.png)
@@ -55,7 +55,5 @@ Note that you need to set the `trained_sample` in the `Evaluation.py` to specify
 ## Citation
 If you find this repository helps your work, please kindly cite our papers as follows:
 
-* **High-parallelism Inception-like Spiking Neural Networks for Unsupervised Feature Learning.  
-     (Submitted to Neurocomputing) [[arXiv](https://arxiv.org/abs/2001.01680)]**
-* **Spiking Inception Module for Multi-layer Unsupervised Spiking Neural Networks.  
-     (Accepted at IJCNN2020) [[arXiv](https://arxiv.org/abs/2001.10696)]**
+* **Meng, Mingyuan, et al. "High-parallelism Inception-like Spiking Neural Networks for Unsupervised Feature Learning" arXiv preprint arXiv:2001.01680 (2019). (Under review) [[arXiv](https://arxiv.org/abs/2001.01680)]**
+* **M. Meng, X. Yang, S. Xiao and Z. Yu, "Spiking Inception Module for Multi-layer Unsupervised Spiking Neural Networks," 2020 International Joint Conference on Neural Networks (IJCNN), Glasgow, United Kingdom, 2020, pp. 1-8, doi: 10.1109/IJCNN48605.2020.9207161. [[IEEE](https://ieeexplore.ieee.org/document/9207161)] [[arXiv](https://arxiv.org/abs/2001.10696)]**
