@@ -5,7 +5,7 @@ But the previous SNNs trained through this approach are limited by slow learning
 To ease these limitations. We proposed a Spiking Inception architecture for unsupervised SNN. 
 Compared with widely used Fully-Connected (FC) and Locally-Connected (LC) architecture, the STDP-based unsupervised SNN with our architecture
 has much improved learning capability, learning efficiency, and robustness.  
-**For more details, please refer to our paper. [[IEEE](https://ieeexplore.ieee.org/document/9207161)] [[arXiv](https://arxiv.org/abs/2001.01680)].**
+**For more details, please refer to our paper. [[arXiv](https://arxiv.org/abs/2001.01680)].**
 
 ## Architecture
 ![architecture](https://github.com/MungoMeng/Spiking-Inception/blob/master/Figure/architecture.png)
