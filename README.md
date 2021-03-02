@@ -5,7 +5,7 @@ But previous SNNs trained through this approach are limited by slow learning spe
 To ease these limitations. We proposed a Spiking Inception architecture for unsupervised SNN. 
 Compared to widely used Fully-Connected (FC) and Locally-Connected (LC) architectures, STDP-based unsupervised SNNs using our architecture
 have much improved learning capability, learning efficiency, and robustness.  
-**For more details, please refer to our paper. [[Neurocomputing](https://www.sciencedirect.com/science/article/abs/pii/S0925231221002733)] [[arXiv](https://arxiv.org/abs/2001.01680)].**
+**For more details, please refer to our paper. [[Neucom](https://www.sciencedirect.com/science/article/abs/pii/S0925231221002733)] [[arXiv](https://arxiv.org/abs/2001.01680)].**
 
 ## Architecture
 ![architecture](https://github.com/MungoMeng/Spiking-Inception/blob/master/Figure/architecture.png)
@@ -55,5 +55,5 @@ Note that you need to set the `trained_sample` in the `Evaluation.py` to specify
 ## Citation
 If you find this repository helps your work, please kindly cite our papers as follows:
 
-* **Mingyuan Meng, Xingyu Yang, Lei Bi, Jinman Kim, Shanlin Xiao, Zhiyi Yu, "High-parallelism Inception-like Spiking Neural Networks for Unsupervised Feature Learning," Neurocomputing, 2021, doi: https://doi.org/10.1016/j.neucom.2021.02.027. [[Neurocomputing](https://www.sciencedirect.com/science/article/abs/pii/S0925231221002733)] [[arXiv](https://arxiv.org/abs/2001.01680)]**
+* **Mingyuan Meng, Xingyu Yang, Lei Bi, Jinman Kim, Shanlin Xiao, Zhiyi Yu, "High-parallelism Inception-like Spiking Neural Networks for Unsupervised Feature Learning," Neurocomputing, 2021, doi: 10.1016/j.neucom.2021.02.027. [[Neucom](https://www.sciencedirect.com/science/article/abs/pii/S0925231221002733)] [[arXiv](https://arxiv.org/abs/2001.01680)]**
 * **M. Meng, X. Yang, S. Xiao and Z. Yu, "Spiking Inception Module for Multi-layer Unsupervised Spiking Neural Networks," 2020 International Joint Conference on Neural Networks (IJCNN), Glasgow, United Kingdom, 2020, pp. 1-8, doi: 10.1109/IJCNN48605.2020.9207161. [[IEEE](https://ieeexplore.ieee.org/document/9207161)] [[arXiv](https://arxiv.org/abs/2001.10696)]**
