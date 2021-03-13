@@ -55,5 +55,5 @@ Note that you need to set the `trained_sample` in the `Evaluation.py` to specify
 ## Citation
 If this repository helps your work, please kindly cite our papers as follows:
 
-* **Mingyuan Meng, Xingyu Yang, Lei Bi, Jinman Kim, Shanlin Xiao, Zhiyi Yu, "High-parallelism Inception-like Spiking Neural Networks for Unsupervised Feature Learning," Neurocomputing, 2021, doi: 10.1016/j.neucom.2021.02.027. [[Neucom](https://www.sciencedirect.com/science/article/abs/pii/S0925231221002733)] [[arXiv](https://arxiv.org/abs/2001.01680)]**
+* **Mingyuan Meng, Xingyu Yang, Lei Bi, Jinman Kim, Shanlin Xiao, Zhiyi Yu, "High-parallelism Inception-like Spiking Neural Networks for Unsupervised Feature Learning," Neurocomputing 441(2021), pp. 92-104, doi: 10.1016/j.neucom.2021.02.027. [[Neucom](https://www.sciencedirect.com/science/article/abs/pii/S0925231221002733)] [[arXiv](https://arxiv.org/abs/2001.01680)]**
 * **Mingyuan Meng, Xingyu Yang, Shanlin Xiao, Zhiyi Yu, "Spiking Inception Module for Multi-layer Unsupervised Spiking Neural Networks," 2020 International Joint Conference on Neural Networks (IJCNN), Glasgow, United Kingdom, 2020, pp. 1-8, doi: 10.1109/IJCNN48605.2020.9207161. [[IEEE](https://ieeexplore.ieee.org/document/9207161)] [[arXiv](https://arxiv.org/abs/2001.10696)]**
