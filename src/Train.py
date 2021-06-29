@@ -270,9 +270,11 @@ while j < n_train:
         input_intensity = start_intensity
 
         j += 1
+        
         if j % progress_interval == 0:
             print 'Progress: ', j, '/', n_train, '(', time.time() - start, 'seconds)'
             start = time.time()
+            
         if j % validate_interval == 0:
             assignments['A1'] = get_new_assignments(result_monitor['A1'][:], input_numbers[:])
             test_results = np.zeros((10, validate_interval))
