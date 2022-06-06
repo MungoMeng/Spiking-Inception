@@ -10,12 +10,12 @@ have much improved learning capability, learning efficiency, and robustness.
 ## Architecture
 ![architecture](https://github.com/MungoMeng/Spiking-Inception/blob/master/Figure/architecture.png)
 
-The Inception module is proposed in the ANN literature. There is a Split-and-Merge strategy in the Inception module: 
+There is a Split-and-Merge strategy in the Inception module: 
 The input is split into a few parallel pathways with a set of specialized filters (e.g. 3×3, 5×5, 7×7 convolutional kernels, pooling, etc.), 
 and then all pathways merge by concatenation. Under this strategy, the Inception modules can integrate multi-scale spatial information 
 and improve the network’s parallelism. We also designed an Inception-like multi-pathway network architecture. 
 To further improve the architecture’s learning efficiency and robustness, we divided each pathway into multiple parallel 
-sub-networks by partitioning competition areas. Finally we attained a high-parallelism Inception-like network architecture
+sub-networks by partitioning competition areas. Finally we constructed a high-parallelism Inception-like network architecture
 consisting of 21 parallel sub-networks.   
 
 ## Instruction
