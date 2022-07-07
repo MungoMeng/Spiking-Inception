@@ -34,19 +34,18 @@ python Train.py
 ```
 If it's the first time you run `Train.py`, you need to download the [MNIST](http://yann.lecun.com/exdb/mnist/) dataset
 and set the `MNIST_data_path` in the `Functions.py` to specify the directory containing the data. 
-The trained weight file will be saved in a directory named `weights` (Sometimes you need to create it manually).
+The trained weight file will be saved in a directory named `weights`.
 
 ### Test
-You need to set the `load_ending` in the `Test.py` to specify which weight file you want to load and test from `weights`. 
+You need to set the `load_ending` in the `Test.py` to specify which weight file you want to load from `weights`. 
 Then, you can test the trained SNN with a simple command:  
 ```
 python Test.py
 ```
-Note that running `Test.py` won't give you a testing result (accuracy) directly. 
-It only saves the spiking activity in a directory named `activity` (Sometimes you need to create it manually).
+Note that running `Test.py` won't directly give you a testing result (accuracy) - It saves the spiking activities in a directory named `activity`.
 
 ### Evaluation
-You can use the following command to get a testing result (accuracy) on the testing set of MNIST.
+You can use the following command to get a result (accuracy) on the testing set of MNIST.
 ```
 python Evaluation.py
 ```
