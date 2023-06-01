@@ -1,4 +1,4 @@
-# Spiking Inception Architecture for Unsupervised Spiking Neural Networks (SNN)
+# Spiking Inception Architecture for Unsupervised Spiking Neural Networks
 Spiking Neural Network (SNN), as a brain-inspired machine learning algorithm, is attracting attention due to its 
 event-driven computing style. Most unsupervised SNNs are trained through competitive learning with Spike-Timing-Dependent Plasticity (STDP). 
 But previous SNNs trained through this approach are limited by slow learning speed and/or sub-optimal learning capability.
